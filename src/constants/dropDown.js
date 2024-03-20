@@ -22,3 +22,11 @@ export  const aboutOptions = [
     { value: 'option1', label: 'Who are we?' },
     { value: 'option2', label: 'our team' },
 ]
+
+export  const legalOptions = [
+    { value: 'option1', label: 'Legal notice?' },
+    { value: 'option2', label: 'Privacy policy' },
+    { value: 'option2', label: 'Cookies policy' },
+    { value: 'option2', label: 'Change cookies settings' },
+    { value: 'option2', label: 'Trust Center' },
+]

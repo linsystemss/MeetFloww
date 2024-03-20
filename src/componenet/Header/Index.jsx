@@ -41,8 +41,8 @@ const Header = () => {
                        Login
                   </button>
                   <button className={`${style.loginButton} ${style.getStarted}`}>
-                      Get Started
-                  </button>
+                        Try For free
+                   </button>
               </div>
           </header>
      )

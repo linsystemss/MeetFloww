@@ -28,6 +28,7 @@ const HomePage = ({ selectedNavItem }) => {
 
     return (
         <div className={style.homePage}>
+
             <div key={`left_${aosKeyLeft}`} className={style.homePageLeft} data-aos="fade-right" >
                 {selectedNavItem.info.map((infoItem) => (
                     <div className={style.infoItemBlock} key={infoItem.id}>
@@ -41,7 +42,7 @@ const HomePage = ({ selectedNavItem }) => {
                     </div>
                 ))}
             </div>
-            <div key={`right_${aosKeyRight}`} data-aos="fade-left" data-aos-duration='1200' data-aos-delay='200'>
+            <div key={`right_${aosKeyRight}`} className={style.homePageRight} data-aos="fade-left" data-aos-duration='1200' data-aos-delay='200'>
                 <div  className={style.homePageImg}>
                     <img src={selectedNavItem.img} alt="Homepage Image" />
                 </div>
