@@ -1,0 +1,54 @@
+.homePage{
+     width: 100%;
+     height: 70vh;
+     display: flex;
+     color: white;
+     align-items: start;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+
+
+.infoItemTitleBlock{
+     display: flex;
+     column-gap: 10px;
+     align-items: center;
+     margin-bottom: 5px;
+}
+
+.title{
+     text-align: left;
+     font-size: 1.25rem;
+     line-height: 1.4;
+     font-weight: 700;
+}
+
+.text{
+     font-size: 18px;
+     color: #dae0e6;
+}
+
+.infoItemIcon{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: #3ea2f4;
+}
+
+.infoItemBlock{
+     margin-bottom: 30px;
+}
+
+.homePageLeft{
+     width: 700px;
+}
+
+.homePageRight{
+     width: 600px;
+     display: flex;
+     justify-content: end;
+}
+
+.homePageImg{
+     width: 80%;
+}

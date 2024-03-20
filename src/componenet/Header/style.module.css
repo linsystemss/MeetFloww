@@ -1,0 +1,72 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 10px 20px  30px  10px;
+    justify-content: space-between;
+}
+
+h1{
+    color: white;
+}
+
+.headerButtons{
+    display: flex;
+    gap: 25px;
+
+}
+
+.loginButton{
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #5f646f;
+    line-height: 1.4;
+    transition: all 0.2s linear 0s, background-position 1ms ease 0s, background-size 1ms ease 0s;
+}
+
+.getStarted{
+    padding:10px 20px ;
+    background-color: #20222b;
+    color: #3ea2f4;
+    font-size: 21px;
+}
+
+.loginButton:hover {
+    color: rgb(71, 103, 136);
+}
+
+.headerLeft{
+    width: 60%;
+    gap: 80px;
+    display: flex;
+}
+
+.navMenu{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.navText{
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 160px;
+    height: 50px;
+}
+
+
+.logo img{
+    border-radius: 3px;
+}
