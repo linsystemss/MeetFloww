@@ -1,54 +1,25 @@
-import { useEffect, useState } from "react";
-import style from './style.module.css';
-import AOS from "aos";
 import 'aos/dist/aos.css';
+import HomePage from "./Home";
+import Navbar from "../Navbar/Index";
+import SocialMedia from "../socialMediaAnimation/Index";
+import PricingTable from "../Price/Index";
+import Accordion from "../Accordion/Index";
+import {items} from  "../../constants/accardion"
+import style from './style.module.css'
 
-const HomePage = ({ selectedNavItem }) => {
-    const [aosKeyLeft, setAosKeyLeft] = useState(0);
-    const [aosKeyRight, setAosKeyRight] = useState(0);
+const Home = ({selectedNavItem , handleNavbarItemClick}) => {
+   return( <>
+       <div className={style.button}>
+           <button>Try For Free</button>
+       </div>
 
-    useEffect(() => {
-        AOS.init({
-            duration: 2000
-        });
-        AOS.refresh();
-    }, []);
+       <Navbar onNavbarItemClick={handleNavbarItemClick} />
+        <HomePage selectedNavItem={selectedNavItem} />
+        <SocialMedia />
+        <PricingTable/>
+        <Accordion  items={items}/>
+    </>)
 
-    useEffect(() => {
-        setAosKeyLeft(prevKey => prevKey + 1);
-    }, [selectedNavItem]);
-
-    useEffect(() => {
-        setAosKeyRight(prevKey => prevKey + 1);
-    }, [selectedNavItem]);
-
-    useEffect(() => {
-        AOS.refresh();
-    }, [aosKeyLeft, aosKeyRight]);
-
-    return (
-        <div className={style.homePage}>
-
-            <div key={`left_${aosKeyLeft}`} className={style.homePageLeft} data-aos="fade-right" >
-                {selectedNavItem.info.map((infoItem) => (
-                    <div className={style.infoItemBlock} key={infoItem.id}>
-                        <div className={style.infoItemTitleBlock}>
-                            <div className={style.infoItemIcon}>
-                                {/*<img src={infoItem.icon} alt="Icon"/>*/}
-                            </div>
-                            <h3 className={style.title}>{infoItem.title}</h3>
-                        </div>
-                        <p className={style.text}>{infoItem.text}</p>
-                    </div>
-                ))}
-            </div>
-            <div key={`right_${aosKeyRight}`} className={style.homePageRight} data-aos="fade-left" data-aos-duration='1200' data-aos-delay='200'>
-                <div  className={style.homePageImg}>
-                    <img src={selectedNavItem.img} alt="Homepage Image" />
-                </div>
-            </div>
-        </div>
-    );
 }
 
-export default HomePage;
+export default Home;

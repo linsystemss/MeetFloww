@@ -16,11 +16,13 @@ const Header = () => {
           <header className={style.header}>
               <div className={style.headerLeft}>
                    <div className={style.logo}>
+                       <Link to={'/'}>
                          <img  src='./logo.png'   />
+                       </Link>
                    </div>
                   <nav className={style.navMenu}>
                       <div className={style.navText}>
-                          <HoverDropdownMenu options={optionsWhyLeexi} onSelect={handleSelect} dropName={'Why Leexi'} />
+                          <HoverDropdownMenu options={optionsWhyLeexi} onSelect={handleSelect} dropName={'Why MeetFloww'} />
                           <IoIosArrowForward color='white' className={style.arrow} />
                       </div>
                       <div className={style.navText}>
@@ -38,10 +40,13 @@ const Header = () => {
               </div>
               <div className={style.headerButtons}>
                   <button className={style.loginButton}>
+                      <Link  className={style.loginButton} to={'login'}>
                        Login
+                      </Link>
                   </button>
                   <button className={`${style.loginButton} ${style.getStarted}`}>
-                        Try For free
+                       <Link   to={'register'}> Try For free </Link>
+
                    </button>
               </div>
           </header>

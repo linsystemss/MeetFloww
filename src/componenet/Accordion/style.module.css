@@ -1,0 +1,28 @@
+.accordion {
+    width: 100%;
+    background-color: #e0e7ff;
+    border-radius: 8px;
+}
+
+.collapse  p {
+    color: #20222b;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    font-weight: 500;
+    line-height: 1.3rem;
+    font-family: sans-serif;
+}
+
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    font-size: 23px;
+    font-weight: 600;
+    height: 780px;
+}

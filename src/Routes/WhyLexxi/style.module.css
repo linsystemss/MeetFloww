@@ -1,0 +1,103 @@
+.whyLexxi{
+    width: 100%;
+    padding:  50px 10px;
+}
+
+.whyLexxiIcons{
+    min-width: 50px;
+    max-width: 170px;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    column-gap: 15px;
+}
+
+
+.whyLexxiIcons p{
+   color: white;
+}
+
+.main{
+    display: flex;
+    column-gap: 15px;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+}
+
+.mainLeft{
+    color: white;
+}
+
+.mainLeft h1{
+  margin-bottom: 20px;
+}
+
+.mainLeft p{
+  display: flex;
+   gap: 20px;
+}
+.mainRight{
+    width: 400px;
+}
+
+.flip{
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 15px;
+    text-align: center;
+   font-size: 23px;
+    font-weight: 500;
+}
+
+.flipBlock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    padding: 20px;
+}
+
+.fadeBlock{
+    width: 100%;
+    margin-top: 100px;
+    /*background-color: white;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.fadeRight{
+    width: 400px;
+    min-height: 300px;
+    padding: 50px;
+    background-color: #5e17eb;
+    color: white;
+    border-radius:8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.Info{
+    max-width: 200px;
+    display: flex;
+    column-gap: 10px;
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.3rem;
+
+}
+
+
+
+.fadeLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    min-height: 300px;
+}

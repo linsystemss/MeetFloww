@@ -1,12 +1,12 @@
 export const  optionsWhyLeexi = [
-    { value: 'option1', label: 'Ai  meeting' },
-    { value: 'option2', label: 'Sales enablement' },
-    { value: 'option3', label: 'Sales training' },
-    { value: 'option4', label: 'Business intelligence' },
-    { value: 'option5', label: 'Onboarding' },
-    { value: 'option6', label: 'Dashboard' },
-    { value: 'option7', label: 'Customer service' },
-    { value: 'option8', label: 'Call center' },
+    { value: 'option1', label: 'Ai meeting' , link: 'aiMeeting' },
+    { value: 'option2', label: 'Sales enablement' , link: 'SalesEnablement' },
+    { value: 'option3', label: 'Sales training', link: 'SalesTraining' },
+    { value: 'option4', label: 'Business intelligence', link: 'BusinessIntelligence' },
+    { value: 'option5', label: 'Onboarding' , link: 'Onboarding'},
+    { value: 'option6', label: 'Dashboard', link: 'Dashboard' },
+    { value: 'option7', label: 'Customer service', link: 'CustomerService' },
+    { value: 'option8', label: 'Call center', link: 'CallCenter' },
 ];
 
 export  const solutionsOptions = [

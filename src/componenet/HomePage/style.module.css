@@ -52,3 +52,21 @@
 .homePageImg{
      width: 80%;
 }
+
+.button{
+     width: 100%;
+     display: flex;
+     margin: 20px 0px;
+     align-items: center;
+     justify-content: center;
+}
+
+.button button{
+     padding: 10px 35px;
+     border-radius: 6px;
+     border: none;
+     background-color: #5e17eb;
+     font-size: 18px;
+     font-weight: 600;
+     color: white;
+}

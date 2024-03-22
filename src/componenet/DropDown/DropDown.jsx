@@ -24,7 +24,7 @@ const HoverDropdownMenu = ({ options, onSelect , dropName }) => {
                 <ul className="dropdown-list">
                     {options.map((option, index) => (
                         <li key={index}>
-                            <Link className='link' to={'/'}>{option.label}</Link>
+                            <Link className='link' to={`/${option.link}`}>{option.label}</Link>
                         </li>
                     ))}
                 </ul>

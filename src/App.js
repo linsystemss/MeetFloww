@@ -1,16 +1,13 @@
 import './App.css';
-import Header from "./componenet/Header/Index";
-import HomePage from "./componenet/HomePage/Index";
-import Navbar from "./componenet/Navbar/Index";
-import { useState ,useEffect } from 'react';
+import { useState  } from 'react';
 import { navbarInfo } from './constants/navbar';
-import SocialMedia from "./componenet/socialMediaAnimation/Index";
+import Routers from "./Routes/Index";
+import Header from "./componenet/Header/Index";
 import Footer from "./componenet/Footer/Index";
+import ChatBot from "./componenet/ChatBot/ChatBot";
 
 function App() {
     const [selectedNavItem, setSelectedNavItem] = useState(navbarInfo[0]);
-    const [homePageInfo , setHomePageInfo] = useState('')
-
 
     const handleNavbarItemClick = (item) => {
         const selected = navbarInfo.find((i) => i.name === item.name);
@@ -20,9 +17,8 @@ function App() {
     return (
         <div className='container'>
             <Header />
-            <Navbar onNavbarItemClick={handleNavbarItemClick} />
-            <HomePage selectedNavItem={selectedNavItem} />
-            <SocialMedia />
+            <Routers  handleNavbarItemClick={handleNavbarItemClick} selectedNavItem={selectedNavItem}/>
+            <ChatBot/>
             <Footer />
         </div>
     );
